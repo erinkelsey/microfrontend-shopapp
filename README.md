@@ -1,6 +1,6 @@
 # Microfrontend Shop App
 
-A simple microfrontend shop app built with HTML, CSS, JavaScript, Webpack Module Federation using Run-Time Integration.
+A demo microfrontend shop app built with HTML, CSS, JavaScript, and Webpack Module Federation using Run-Time Integration.
 
 ### What are microfrontends?
 
