@@ -4,15 +4,21 @@ A demo microfrontend shop app built with HTML, CSS, JavaScript, and Webpack Modu
 
 ### Install
 
-Run the following command in both the products and container folders:
+Run the following command in both the products, cart and container folders:
 
     $ npm install
 
 ### Run
 
-Run the following command in both the products and container folders:
+Run the following command in both the products, cart and container folders:
 
     $ npm start
+
+Products: http://localhost:8081/
+
+Cart: http://localhost:8082/
+
+Container: http://localhost:8080/
 
 ## Microfrontends
 
@@ -25,6 +31,10 @@ Run the following command in both the products and container folders:
 
 - Multiple engineering teams can work in isolation
 - Each smaller app is easier to understand and make changes to
+
+### Requirement
+
+Must be able to develop each sub-project in isolation, and run each sub-project in the context of a container.
 
 ## Integrations
 
@@ -86,6 +96,8 @@ Container project webpack:
 - bootstrap.js -> contains bootstrap.js. webpack knows it has to fetch something from products before running this file
 
 <img src="project-outline.png">
+
+NOTE: Products and Cart index.html are only used during development. Container is used during development and production.
 
 ### Server Integration
 
