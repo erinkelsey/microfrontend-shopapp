@@ -85,6 +85,8 @@ Container project webpack:
 - main.js -> contains contents of index.js
 - bootstrap.js -> contains bootstrap.js. webpack knows it has to fetch something from products before running this file
 
+<img src="project-outline.png">
+
 ### Server Integration
 
 While sending down JS to load up Container, a server decides on whether or not to include ProductsList source.
