@@ -2,6 +2,20 @@
 
 A demo microfrontend shop app built with HTML, CSS, JavaScript, and Webpack Module Federation using Run-Time Integration.
 
+### Install
+
+Run the following command in both the products and container folders:
+
+    $ npm install
+
+### Run
+
+Run the following command in both the products and container folders:
+
+    $ npm start
+
+## Microfrontends
+
 ### What are microfrontends?
 
 - Divide a monolithic app into multiple, smaller apps
@@ -56,6 +70,20 @@ CONS:
 NOTE: this project uses this type of integration with the help of Webpack Module Federation
 
 This integration is hardest to setup and understand, but is most flexible and performant solution around right now.
+
+#### Module Federation
+
+Outputs a set of files in products folder, which allow for integration:
+
+- remoteEntry.js -> contains a list of files that are available from this project + directions on how to load them
+- src_index_js.js -> version of src/index.js that can be safely loaded into the browser
+- faker.js -> version of faker code that can be safely loaded into the browser
+
+Container project webpack:
+
+- index.js -> for making sure that webpack knows to get some additional javascript (from products project)
+- main.js -> contains contents of index.js
+- bootstrap.js -> contains bootstrap.js. webpack knows it has to fetch something from products before running this file
 
 ### Server Integration
 

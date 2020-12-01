@@ -1,7 +1,7 @@
 {
-  "name": "products",
+  "name": "cart",
   "version": "1.0.0",
-  "description": "A demo microfrontend shop app built with HTML, CSS, JavaScript, and Webpack Module Federation using Run-Time Integration.",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve"
